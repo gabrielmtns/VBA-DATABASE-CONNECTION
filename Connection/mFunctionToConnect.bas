@@ -7,7 +7,7 @@ Public Function app(Optional ByVal sql As String, Optional ByVal getRecordset As
     Dim myObject As New clsConnection
     Dim dbPath   As String
 
-    dbPath = 'SUA STRING DE CONEXÃO AQUI'
+        dbPath = 'CONNECTION STRING'
 
     myObject.connectionString = dbPath
                            
