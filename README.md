@@ -1,6 +1,7 @@
 # VBA Class to facilitate connection and the forms interactions with the database
 
 Difference between the clsConnection file and clsConnectionComplete:
+
    clsConnectionComplete: provide support to: ListView, TextBox and ComboBox. Implementation to ListBox is pending.
    
    If in your project is not necessary to use forms, use clsConnection file
