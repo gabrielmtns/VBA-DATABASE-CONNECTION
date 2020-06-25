@@ -15,8 +15,9 @@ Difference between the clsConnection file and clsConnectionComplete:
 
     
 How to use:
-   Import the file mFunctionConnect, clsConnection to your VBA project.
-   Put your DB Connection string in mFunctionConnect file.
+
+      Import the file mFunctionConnect, clsConnection to your VBA project.
+      Put your DB Connection string in mFunctionConnect file.
    
 Example to consume class:
 
