@@ -33,12 +33,12 @@ Property Get connection() As ADODB.connection: Set connection = this.connection:
 Private Function createConnection()
     Set this.connection = New ADODB.connection
     this.connection.Open this.connectionString
-    If this.connection.State = adStateOpen Then Debug.Print "Conexao com o banco estabelecida..."
+          If this.connection.State = adStateOpen Then Debug.Print "Connection succeds..."
 End Function
 Private Function createRecordSet()
     Set this.recordset = New ADODB.recordset
     this.recordset.Open this.sql, this.connection, adOpenKeyset, adLockOptimistic
-    Debug.Print "Dados encontrados..."
+    Debug.Print "Data found..."
 End Function
 Public Function execute(): this.connection.execute this.sql: End Function
 
@@ -75,12 +75,12 @@ End Function
 
 Public Function killConnection(Optional ByVal connection As ADODB.connection, Optional ByVal recordset As ADODB.recordset)
     On Error Resume Next
-    If this.recordset.State = 1 Then this.recordset.Close: Set this.recordset = Nothing: Debug.Print "Recordset encerrado."
-    If this.connection.State = adStateOpen Then this.connection.Close: Set this.connection = Nothing: Debug.Print "Conex�o encerrada"
+    If this.recordset.State = 1 Then this.recordset.Close: Set this.recordset = Nothing: Debug.Print "Recordset closed."
+    If this.connection.State = adStateOpen Then this.connection.Close: Set this.connection = Nothing: Debug.Print "Connection closed."
     If Not connection Is Nothing Then connection.Close: Set connection = Nothing
     If Not recordset Is Nothing Then recordset.Close: Set recordset = Nothing
 End Function
-'------------------------------------------COMANDOS/A�OES-----------------------------------------------------------'
+'------------------------------------------COMMANDS/ACTIONS-----------------------------------------------------------'
 Public Function fieldToArray(Optional FirstBlank As Boolean = False) As Variant
     Dim field       As ADODB.field
     Dim matriz      As Variant
