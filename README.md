@@ -42,5 +42,6 @@ Exemplo de consumo da classe:
         Import the file mFunctionConnect, clsConnection to your VBA project.
         Put your DB Connection string in mFunctionConnect file.
     Example to consume class:
-        ![instructionBasicConnection](https://user-images.githubusercontent.com/35817813/56043337-6dd5ca00-5d13-11e9-9909-62b42c38a64c.PNG)
+    
+  ![instructionBasicConnection](https://user-images.githubusercontent.com/35817813/56043337-6dd5ca00-5d13-11e9-9909-62b42c38a64c.PNG)
         
