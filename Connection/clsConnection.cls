@@ -24,7 +24,7 @@ Public Sub create(ByVal returnRecordSet As Boolean)
     createConnection
     If returnRecordSet Then createRecordSet
 End Sub
-'------------------------------------------Propertys---------------------------------------------------'
+'------------------------------------------Props---------------------------------------------------'
 Property Let sql(ByVal value As String): this.sql = value: End Property
 Property Get sql() As String: sql = this.sql: End Property
 Property Let connectionPath(ByVal value As String): this.connectionPath = value: End Property
